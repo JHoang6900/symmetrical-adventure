@@ -1,5 +1,5 @@
 ![logo](https://s3.amazonaws.com/bottega-devcamp/bottega-devcamp.png)
-
+# Bottega Devcamp
 ## Hi there! Welcome to Bottega Devcamp
 
 ### Instructions to enter into the bash shell
