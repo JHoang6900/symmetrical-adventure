@@ -20,6 +20,7 @@ Blog.create!(
 )
 end
 
+puts '10 blogs created'
 5.times do |skill|
   Skill.create!(
     title: "Rails #{skill}",
@@ -56,3 +57,10 @@ end
         )
       end
       puts "1 Angular item created"
+      
+      3.times do |technology|
+        Portfolio.last.technologies.create!(
+             name: "Technology #{technology}",
+          )
+      end
+      puts "3 Technologies created"
