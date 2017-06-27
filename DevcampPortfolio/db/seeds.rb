@@ -21,6 +21,7 @@ Blog.create!(
 end
 
 puts '10 blogs created'
+
 5.times do |skill|
   Skill.create!(
     title: "Rails #{skill}",
