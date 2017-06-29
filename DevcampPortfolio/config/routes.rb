@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users, paht: '', path_names: {sign_in: 'login', sign_out: 'logout', sign_up: 'register'}
   # get 'Custom-URL-HERE' to: 'Actual Route'
   resources :portfolios, except: [:show]
   get 'angular-items', to: 'portfolios#angular'
