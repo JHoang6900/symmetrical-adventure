@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   # get 'Custom-URL-HERE' to: 'Actual Route'
   resources :portfolios, except: [:show]
   get 'angular-items', to: 'portfolios#angular'
