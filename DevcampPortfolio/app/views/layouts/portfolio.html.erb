@@ -24,7 +24,10 @@
        <% end %>
     <%= yield %>
     
-<%= render "shared/nav" %>
+<%= render "shared/nav", location: 'top' %>
+  <!-- Renders are partials. 
+  Partials are pieces of code that are shared 
+  accessible to other files to be called on. !--> 
     
     <% if session[:source] %>
     <p> Thanks for visiting me from <%= session[:source] %> </p>
