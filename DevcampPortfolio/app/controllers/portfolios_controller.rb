@@ -40,6 +40,8 @@ end
       else
         format.html { render :edit }
         format.json { render json: @blog.errors, status: :unprocessable_entity }
+          3.times { @portfolio_item.technologies.build }  
+
       end
     end
   end
