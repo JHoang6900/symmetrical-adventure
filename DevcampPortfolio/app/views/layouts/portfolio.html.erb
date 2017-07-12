@@ -24,8 +24,6 @@
   Partials are pieces of code that are shared 
   accessible to other files to be called on. !--> 
     
-    <% if session[:source] %>
-    <p> Thanks for visiting me from <%= session[:source] %> </p>
-    <% end %>
+<%= source_helper("application") %>
   </body>
 </html>
