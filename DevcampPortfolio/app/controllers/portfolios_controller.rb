@@ -1,4 +1,5 @@
 class PortfoliosController < ApplicationController
+    before_action :set_portoflio_item, only: [:edit, :show, :destroy, :update]
   layout 'portfolio'
   def index
     @portfolio_items = Portfolio.all
@@ -27,8 +28,7 @@ def create
 end
   
   def edit
-  @portfolio_item = Portfolio.find(params[:id])
-  3.times { @portfolio_item.technologies.build }  
+    @portfolio_item = Portfolio.find(params[:id])
   end
 
   def update
@@ -72,4 +72,9 @@ end
                                       technologies_attributes: [:name]
                                       )
   end
+  
+  def set_portoflio_item
+        @portfolio_item = Portfolio.find(params[:id])
+  end
+    
 end
