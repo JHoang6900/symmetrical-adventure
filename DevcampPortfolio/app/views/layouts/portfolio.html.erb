@@ -19,11 +19,13 @@
 
     <%= yield %>
     
-<%= render "shared/nav", location: 'top' %>
-  <!-- Renders are partials. 
-  Partials are pieces of code that are shared 
-  accessible to other files to be called on. !--> 
+    <%= render "shared/nav", location: 'top' %>
+      <!-- Renders are partials. 
+      Partials are pieces of code that are shared 
+      accessible to other files to be called on. !--> 
+        
+    <%= copyright_generator %>
     
-<%= source_helper("application") %>
+    <%= source_helper("application") %>
   </body>
 </html>

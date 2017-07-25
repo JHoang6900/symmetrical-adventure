@@ -19,6 +19,10 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
   end
+  
+  def copyright_generator
+    HoangDevcampViewTool::Renderer.copyright "Jeffrey Hoang", 'All rights reserved'
+  end
 end
 #Use Partials for HTML
 #Use ViewHelpers for Ruby Code
