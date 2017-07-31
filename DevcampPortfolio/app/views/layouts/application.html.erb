@@ -17,12 +17,12 @@
      <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
        
-      <%= render "shared/nav", location: 'top'%>
+      <%= render "shared/application_nav", location: 'top'%>
         <!-- Renders are partials. 
         Partials are pieces of code that are shared 
         accessible to other files to be called on. !--> 
              
-        <%= login_helper %>
+        
         <%= yield %>
         
         <%= copyright_generator %>
