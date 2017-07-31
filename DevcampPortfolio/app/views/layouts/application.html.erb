@@ -14,19 +14,28 @@
   </head>
 
   <body>
-     <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
+     <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+    
+        <div class="cover-container">
        
-      <%= render "shared/application_nav", location: 'top'%>
-        <!-- Renders are partials. 
-        Partials are pieces of code that are shared 
-        accessible to other files to be called on. !--> 
-             
-        
-        <%= yield %>
-        
-        <%= copyright_generator %>
+          <%= render "shared/application_nav", location: 'top'%>
+            <!-- Renders are partials. 
+            Partials are pieces of code that are shared 
+            accessible to other files to be called on. !--> 
+                 
+            
+          <%= yield %>
           
-      <%= source_helper("application") %>
+          <%= copyright_generator %>
+
+
+
+        
+          <%= source_helper("application") %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
